@@ -1,0 +1,6 @@
+/opt/spark/bin/spark-submit --class "Main" --master local[4]  --packages org.apache.spark:spark-sql-kafka-0-10_2.12:2.4.4  /home/bw/scala/Spark/KafkaSparkTripleJoin/build/libs/KafkaSparkTripleJoin.jar
+
+/opt/spark/bin/spark-submit --class "Main" --master local[4]  --packages org.mongodb.spark:mongo-spark-connector_2.12:2.4.1 /home/bw/scala/Spark/KafkaSparkTripleJoin/build/libs/KafkaSparkTripleJoin.jar
+
+/opt/spark/bin/spark-submit --class "Main" --master local[4]  --packages org.mongodb.spark:mongo-spark-connector_2.12:2.4.1,org.apache.spark:spark-sql-kafka-0-10_2.12:2.4.4 /home/bw/scala/Spark/KafkaSparkTripleJoin/build/libs/KafkaSparkTripleJoin.jar
+
