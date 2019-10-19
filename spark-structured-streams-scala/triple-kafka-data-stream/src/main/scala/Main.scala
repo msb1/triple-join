@@ -29,9 +29,9 @@ object Main {
     val genData = system.actorOf(Props(new GenData(kafkaProducer)), "genData")
 
     // Generate Card, Verification and User data - send to Kafka Producer
+    genData ! StartGenUsers(numUsers, userTopic) 
     genData ! StartGenCards(numCards, numUsers, cardTopic)
-    genData ! StartGenVerifications(numVerifications, numUsers, verificationTopic) // start genUsers
-    genData ! StartGenUsers(numUsers, userTopic) // start genUsers
+    genData ! StartGenVerifications(numVerifications, numUsers, verificationTopic) 
   }
 }
 
