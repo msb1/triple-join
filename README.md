@@ -20,3 +20,8 @@
 <li>Use same Program 1 from Case 3 to generate data records to Producer topics</li>
 <li>Program is Scala Kafka Streams implementation of Triple Join with aggregation</li>
 </ol>
+<h4><strong>Case 5: Scala Flink</strong></h4>
+<ol>
+<li>Use same Program 1 from Case 3 to generate data records to Producer topics</li>
+<li>Program is Scala Flink implementation of Triple Join with aggregation</li>
+</ol>
